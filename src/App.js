@@ -11,7 +11,7 @@ function App() {
   return (
       <ThemeProvider theme={theme}>
         <Router>
-          <ButtonAppBar />
+        <ButtonAppBar />
           <Route path="/" exact component={HomeSearchField} />
           <Route path="/map" component={DetailedMap} />
           {/* <Route component={ErrorPage} /> */}
