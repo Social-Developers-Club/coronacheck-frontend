@@ -6,6 +6,7 @@ import { DetailedMap  } from './components/detailedMap';
 import { ErrorPage  } from './components/errorPage';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { ButtonAppBar } from './components/buttonAppBar';
+import { RealtimeTweets } from './components/realtimeTweets';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Router>
         <ButtonAppBar />
           <Route path="/" exact component={HomeSearchField} />
-          <Route path="/map" component={DetailedMap} />
+          <Route path="/tweets" exact component={RealtimeTweets} />
+          <Route path="/map" exact component={DetailedMap} />
           {/* <Route component={ErrorPage} /> */}
         </Router>
       </ThemeProvider>

@@ -31,6 +31,7 @@ export const ButtonAppBar = () => {
             <Link to="/" className={classes.linkStyle}>CoronaChecker.io</Link>
           </Typography>
           <Link to="/" className={classes.linkStyle}><Button color="inherit">Home</Button></Link>
+          <Link to="/tweets" className={classes.linkStyle}><Button color="inherit">Tweets</Button></Link>
           <Link to="/map" className={classes.linkStyle}><Button color="inherit">Map</Button></Link>
         </Toolbar>
       </AppBar>
